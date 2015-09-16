@@ -1,0 +1,96 @@
+<!-- 
+	INFO 343 A & B
+	FinalProject HTML file
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Final Project</title>
+		<!-- <link href="finalproject.css" type="text/css" rel="stylesheet" /> -->
+		<link href="taboo.css" type="text/css" rel="stylesheet" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+    	<script src="taboo.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="banner">
+        <div id="currentTeam">
+        Current Team: <span class = "currentT">A</span> 
+        </div>
+			<div id="pokemon"> 
+				<h2>
+					<select name="favoritecharacter">
+						<option value="ani">Anime</option>
+						<option value="wiki" selected="selected">Wikipedia</option>
+						<option value="sw">Star Wars (Tabooine)</option>
+						<option value="futura">Futurama</option> 
+						<option value="pokemon">Pokemon</option> 
+						<option value="commun">Community</option> 
+						<option value="xfiles">X-files</option> 
+					</select>
+				</h2>
+			</div>
+			<div id="madara"> ||Team A:  <span id="a"> 0</span>     || Team B: <span id="b"> 0  </span>||
+			</div>
+		</div>
+
+		<div id="mainCard"> 
+			<div id="cardHead">
+           		<h2></h2>
+       		</div> 
+			<div id="cardBody">
+			<ul></ul>
+			</div>
+			<div id="buttonsMain">
+            <div id="buttons"> 
+				<button type="button"  class = "tally">Correct</button> 
+				<button type="button"  class = "tally">Taboo</button> 
+				<button type="button"  class = "tally">Skip</button> 
+		</div>
+				<button type="button" id="startBut"><b>Start</b></button>
+				<button type="button" id ="reset"><b>Reset</b></button>
+                	</div>
+				<p>Time remaining: <span id="stopwatch"></span></p>
+				<p id=how2play> </p>
+                
+                
+                
+		</div>
+       
+
+     <div id ="midmid">  
+			<a class="pop-up-link" href="#" title="View Pop Up" >Instructions/Readme</a>
+
+			<div class='popup'> <a href='#' title="Close" class='close'>X</a> <div> 
+			<h3 class="pop-heading">Taboo</h3> </div> 
+
+				<div class="pop-info">	
+					<dl>
+						<dt>What is Taboo?</dt>
+						<dd>Well, folks, Taboo is a turnbased party game originally established by Hasbro in 1989. This version of the game can consist of up to two teams, each taking turns--with the objective of the other team guess the word on the header current card without using the provided additional words on the body.
+							Furthermore, there will be a timer set by default of 120 seconds, that will be alloted to each team. As soon as the timer expires, the teams will alternate, and the cycle would continue. This will continue until a certain score limit is reached, or at the players discretion. </dd>
+					<dl>		
+						<dt>What does our program do? </dt>
+						<dd>Our program basically reinterperts the original Taboo game with the inclusion of new topics, as well as with a virtually limitless amount of cards. For this application, we employed the use of the Alchemy API, an API that can take in an URL of a wikipage and break it down intelligently into terms. From that, our program also utilized an ajax solution to retrieve data from the alchemy API. </dd>
+					</dl> 
+					<dl>
+						<dt>Rules:</dt>
+						<dd>
+							<ol>
+								<li>No gesturing or singing</li>
+								<li>Teams will be divided in two</li>
+								<li>There needs to be a minimum of 4 participants </li>
+								<li>In a team's turn, there will need to be a guesser from the team along with someone from the other team to check for taboo words </li>
+								<li>You cannot use any word from the words-to-be-guessed or Taboo words </li>
+							</ol>
+						</dd>
+					</dl>
+				</div> 
+			</div>
+		</div>
+        
+		<footer>powered by : <br>
+				<a href="http://www.alchemyapi.com"><img src="http://www.alchemyapi.com/images/alchemyAPI.jpg" width="160px"></a> </footer>
+
+	</body>
+</html> 
